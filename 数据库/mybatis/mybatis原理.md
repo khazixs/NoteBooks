@@ -2,7 +2,13 @@
 
 转自[博客](https://blog.csdn.net/qq_21150865/article/details/84305338?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param)
 
-![原理图](E:\NoteBooks\数据库\img\mybatis大概原理图.png)
+- 通过Reader对象读取Mybatis映射文件
+- 通过SqlSessionFactoryBuilder对象创建SqlSessionFactory对象
+- 获取当前线程的SQLSession
+- 事务默认开启
+- 通过SQLSession读取映射文件中的操作编号，从而读取SQL语句
+- 提交事务
+- 关闭资源
 
 1. SqlSessionFactory的创建:回顾`SqlSessionFactoryUtil`的`initSqlSessionFactory`方法，首先用`InputStream`读取`mybatis-config.xml`配置文件，然后通过`SqlSessionFactoryBuilder`的`build`方法构造。
 
