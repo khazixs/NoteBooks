@@ -12,7 +12,7 @@ ctrl+c ：强制中断程序的执行
 
 ## Linux命令参考
 
-![img](https://upload-images.jianshu.io/upload_images/228680-92ad761516389d11.jpg)
+![ ](https://upload-images.jianshu.io/upload_images/228680-92ad761516389d11.jpg)
 
 ## Linux中的inode
 
